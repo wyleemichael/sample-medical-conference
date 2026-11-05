@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration · HKIMC 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;650&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <header class="page-hero"><div class="wrap">
+    <p class="kicker" style="color:var(--gold)">Registration</p>
+    <h1>Join the conference.</h1>
+    <p class="muted">Fees below are indicative. This demo stores your details in this browser only — no payment is taken.</p>
+  </div></header>
+  <main class="section">
+    <div class="wrap grid-2">
+      <form id="reg-form" class="form-card">
+        <div class="form-grid">
+          <label>First name<input name="firstName" required /></label>
+          <label>Last name<input name="lastName" required /></label>
+        </div>
+        <label>Email<input type="email" name="email" required /></label>
+        <div class="form-grid">
+          <label>Password<input type="password" name="password" minlength="6" required /></label>
+          <label>Confirm password<input type="password" name="confirm" minlength="6" required /></label>
+        </div>
+        <label>Affiliation / hospital<input name="affiliation" required /></label>
+        <div class="form-grid">
+          <label>Country<input name="country" required /></label>
+          <label>Category
+            <select name="category" required>
+              <option>Physician</option>
+              <option>Trainee / resident</option>
+              <option>Nurse / allied health</option>
+              <option>Student</option>
+              <option>Industry</option>
+            </select>
+          </label>
+        </div>
+        <label>Dietary or access notes<textarea name="notes" placeholder="Optional"></textarea></label>
+        <button class="btn btn-teal" type="submit">Complete registration</button>
+        <p id="reg-notice" class="notice hidden"></p>
+      </form>
+      <aside>
+        <article class="card">
+          <h3>Fees (USD)</h3>
+          <p>Physician <strong>$680</strong></p>
+          <p>Trainee / allied health <strong>$380</strong></p>
+          <p>Student <strong>$180</strong></p>
+          <p>Industry <strong>$920</strong></p>
+          <p class="small muted">Early-bird closes 15 January 2027. On-site registration adds $80.</p>
+        </article>
+        <article class="card" style="margin-top:16px">
+          <h3>Included</h3>
+          <ul>
+            <li>All scientific sessions and exhibition</li>
+            <li>Welcome reception on 18 March</li>
+            <li>Lunches on Day 1 and Day 2</li>
+            <li>Certificate of attendance</li>
+          </ul>
+        </article>
+      </aside>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+  <script>initPage("registration");</script>
+</body>
+</html>

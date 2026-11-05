@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login · HKIMC 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;650&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <header class="page-hero"><div class="wrap">
+    <p class="kicker" style="color:var(--gold)">Login</p>
+    <h1>Delegate access.</h1>
+    <p class="muted">Use the account created at registration. Accounts exist only in this browser.</p>
+  </div></header>
+  <main class="section">
+    <div class="wrap" style="max-width:480px">
+      <form id="login-form" class="form-card">
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Password<input type="password" name="password" required /></label>
+        <button class="btn btn-teal" type="submit">Log in</button>
+        <button class="btn btn-ghost" type="button" id="demo-login">Use demo account</button>
+        <p id="login-notice" class="notice hidden"></p>
+        <p class="small muted">No account yet? <a href="registration.html">Register</a>. Demo: delegate@hkimc.org / hkimc2027</p>
+      </form>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+  <script>initPage("login");</script>
+</body>
+</html>
