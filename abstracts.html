@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abstracts · HKIMC 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;650&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <header class="page-hero"><div class="wrap">
+    <p class="kicker" style="color:var(--gold)">Abstracts</p>
+    <h1>Call for abstracts.</h1>
+    <p class="muted">Deadline: 15 January 2027, 23:59 HKT. Presenting authors must register.</p>
+  </div></header>
+  <main class="section">
+    <div class="wrap grid-2">
+      <div>
+        <article class="card">
+          <h3>Guidelines</h3>
+          <ul>
+            <li>Maximum 300 words, structured as Background, Methods, Results, Conclusion where possible.</li>
+            <li>One figure or table may be described in text; files are not uploaded in this demo.</li>
+            <li>Case reports need consent language and no identifiable data.</li>
+            <li>Encore abstracts are allowed if disclosed.</li>
+            <li>Notifications by 5 February 2027.</li>
+          </ul>
+        </article>
+        <article class="card" style="margin-top:16px">
+          <h3>Presentation types</h3>
+          <p>Oral (12 minutes), moderated poster, and exhibition poster. The abstracts chair assigns format after scoring.</p>
+        </article>
+      </div>
+      <form id="abs-form" class="form-card">
+        <label>Title<input name="title" required maxlength="180" /></label>
+        <label>Presenting author<input name="author" required /></label>
+        <label>Category<select id="abs-category" name="category" required></select></label>
+        <label>Abstract body<textarea name="body" required placeholder="Up to 300 words"></textarea></label>
+        <button class="btn btn-teal" type="submit">Submit abstract</button>
+        <p id="abs-notice" class="notice hidden"></p>
+        <p class="small muted">You need an account. <a href="registration.html">Register</a> or <a href="login.html">log in</a> first.</p>
+      </form>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+  <script>initPage("abstracts");</script>
+</body>
+</html>
